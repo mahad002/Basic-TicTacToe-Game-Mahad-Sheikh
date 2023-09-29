@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mahad TicTacToe</title>
+    <link rel="stylesheet" type="text/css" href="lab5_1239.css">
+    <script src="lab5_1239.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <button class="game-restart-btn" onclick="restartGame()">Restart Game</button>
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+        
+    </nav>
+    <h1>Mahad's Tic-Tac-Toe</h1>
+    <div class="wrapper">
+        
+        <main>
+          <div class="board" id="board">
+            <button class="item" data-cell-index="0"></button>
+            <button class="item" data-cell-index="1"></button>
+            <button class="item" data-cell-index="2"></button>
+            <button class="item" data-cell-index="3"></button>
+            <button class="item" data-cell-index="4"></button>
+            <button class="item" data-cell-index="5"></button>
+            <button class="item" data-cell-index="6"></button>
+            <button class="item" data-cell-index="7"></button>
+            <button class="item" data-cell-index="8"></button>
+          </div>
+        </main>
+    </div>
+    
+      <!-- <button class="game-restart-btn" onclick="restartGame()">Restart Game</button> -->
+    <div class="popup hide" id="popup">
+        <p id="result-message">Game Over</p>
+        <button class="popup__restart-btn" onclick="newGame()">New Game</button>
+    </div>
+    
+</body>
+</html>
