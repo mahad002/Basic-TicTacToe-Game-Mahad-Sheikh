@@ -10,26 +10,34 @@
     <nav>
         <ul>
           <button class="game-restart-btn" onclick="restartGame()">Restart Game</button>
-            <!-- <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li> -->
         </ul>
         
     </nav>
     <h1>Mahad's Tic-Tac-Toe</h1>
     <div class="wrapper">
-        
         <main>
-          <div class="board" id="board">
-            <button class="item" data-cell-index="0"></button>
-            <button class="item" data-cell-index="1"></button>
-            <button class="item" data-cell-index="2"></button>
-            <button class="item" data-cell-index="3"></button>
-            <button class="item" data-cell-index="4"></button>
-            <button class="item" data-cell-index="5"></button>
-            <button class="item" data-cell-index="6"></button>
-            <button class="item" data-cell-index="7"></button>
-            <button class="item" data-cell-index="8"></button>
+          <div class = "option">
+            <button class="choice" id="X0" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" data-cell-index="X0">X</button>
+            <button class="choice" id="X1" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" data-cell-index="X1">X</button>
+            <button class="choice" id="X2" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" data-cell-index="X2">X</button>
+            <h1>Player<br>1</h1>
+          </div>
+          <div><div class="board" id="board">
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="0"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="1"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="2"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="3"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="4"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="5"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="6"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="7"></button>
+            <button class="item" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="" ondragstart="drag(event)" data-cell-index="8"></button>
+          </div></div>
+          <div class="option">
+            <button class="choice" id="O0" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" data-cell-index="O0">O</button>
+            <button class="choice" id="O1" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" data-cell-index="O1">O</button>
+            <button class="choice" id="O2" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)" data-cell-index="O2">O</button>
+            <h1>Player<br>2</h1>
           </div>
         </main>
     </div>

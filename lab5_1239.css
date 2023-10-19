@@ -10,37 +10,6 @@ nav{
     padding: 1rem;
     margin-bottom: 1rem;
   } 
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 1rem;
-    padding: 0 1rem;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-li{
-    margin: 0 1rem;
-    padding: 0 1rem;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-li:hover{
-    background-color: #000000;
-}
-
-li a, li button{
-    text-decoration: none;
-    color: #fff;
-}
-
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -53,7 +22,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 16px;
     border-radius: 5px;
   }
@@ -68,64 +37,30 @@ body {
     justify-content: space-between;
   }
   
-  Style items within the container 
-  .item {
-    flex: 1;
-    height: 100%;
-    width: 100%;
-    margin: 10px;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    text-align: center;
-  }
-
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .item {
-      flex: 1;
-      margin: 10px;
-      padding: 20px;
-    }
-  }
+ 
 
   .wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     width: 100%;
     padding-top: 2%;
   }
 
-  aside {
-    background: #724141;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    height: 50%;
-    padding: 1rem;
-    }
-
     main {
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
         border-radius: 5px;
-        height: 100%;
+        height: auto;
+        width: auto;
         justify-self: auto;
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: repeat(3, 100px);
+        grid-gap: 150px;
     }
 
-    aside {
-        flex-basis: 250px;
-        margin-right: 24px;
-        margin-bottom: 1rem;
-    }
-
-    main {
-        display: block;
-    }
+    
 
       body{
         background: #212121;
@@ -144,7 +79,7 @@ body {
     grid-gap: 10px;
   }
 
-  .flip-board {
+.flip-board {
     transform: rotateY(180deg);
     transition: transform 0.5s ease-in-out;
 }
@@ -163,10 +98,28 @@ body {
     color: #000;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    /* .container {
+      flex-direction: column;
+    } */
+  
+    .item {
+      flex: 1;
+      margin: 10px;
+      padding: 20px;
+    }
+  }
+
+  .choice{
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
   }
   
   .game-restart-btn {
@@ -192,5 +145,12 @@ body {
   
   .hide {
     display: none;
+  }
+
+  .option{
+    display:flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(1, 10px); */
+    grid-gap: 20px;
   }
   
